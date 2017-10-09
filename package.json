@@ -1,0 +1,50 @@
+{
+  "name": "fav-type.is-plain-object",
+  "version": "0.4.3",
+  "description": "Checks whether a value is a plain object or not.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "mocha",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm test",
+    "web:build": "npm run web:build-src && npm run web:build-test",
+    "web:build-src": "browserify index.js --standalone fav.type.is-plain-object -o web/fav.type.is-plain-object.js && cd web && uglifyjs fav.type.is-plain-object.js --compress --mangle -o fav.type.is-plain-object.min.js --source-map url=fav.type.is-plain-object.min.js.map",
+    "web:build-test": "node tool/mktest.js",
+    "chrome:install": "npm i --no-save mocha-chrome",
+    "chrome:test": "mocha-chrome test/web/browser-test.html",
+    "phantom:install": "npm i --no-save phantomjs-prebuilt mocha-phantomjs",
+    "phantom:test": "mocha-phantomjs -p node_modules/.bin/phantomjs test/web/browser-test.html",
+    "build": "npm run lint && npm run coverage && npm run web:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sttk/fav-type.git"
+  },
+  "keywords": [
+    "object",
+    "plain-object",
+    "is-plain-object",
+    "type",
+    "datatype",
+    "fav"
+  ],
+  "author": "Takayuki Sato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sttk/fav-type/issues"
+  },
+  "homepage": "https://github.com/sttk/fav-type#readme",
+  "devDependencies": {
+    "@xslet/platform": "^0.1.5",
+    "browserify": "^14.4.0",
+    "chai": "^3.5.0",
+    "eslint": "^4.8.0",
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1",
+    "semver": "^5.4.1",
+    "uglify-js": "^3.1.3"
+  }
+}
