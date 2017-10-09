@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sttk/fav-type.git"
+    "url": "git+https://github.com/sttk/fav-type.is-plain-object.git"
   },
   "keywords": [
     "object",
@@ -34,9 +34,9 @@
   "author": "Takayuki Sato",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sttk/fav-type/issues"
+    "url": "https://github.com/sttk/fav-type.is-plain-object/issues"
   },
-  "homepage": "https://github.com/sttk/fav-type#readme",
+  "homepage": "https://github.com/sttk/fav-type.is-plain-object#readme",
   "devDependencies": {
     "@xslet/platform": "^0.1.5",
     "browserify": "^14.4.0",

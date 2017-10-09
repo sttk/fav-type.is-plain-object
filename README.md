@@ -1,4 +1,4 @@
-# [@fav/type.is-plain-object][repo-url] [![NPM version][npm-img]][npm-url] [![MIT License][mit-img]][mit-url] [![Build Status][travis-img]][travis-url] [![Build Status][appveyor-img]][appveyor-url]
+# [@fav/type.is-plain-object][repo-url] [![NPM][npm-img]][npm-url] [![MIT License][mit-img]][mit-url] [![Build Status][travis-img]][travis-url] [![Build Status][appveyor-img]][appveyor-url]
 
 Checks whether a value is a plain object or not.
 
