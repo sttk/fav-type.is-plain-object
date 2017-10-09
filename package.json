@@ -1,6 +1,6 @@
 {
   "name": "@fav/type.is-plain-object",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Checks whether a value is a plain object or not.",
   "main": "index.js",
   "files": [
@@ -10,6 +10,7 @@
     "lint": "eslint src test",
     "test": "mocha",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm test",
+    "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
     "web:build": "npm run web:build-src && npm run web:build-test",
     "web:build-src": "browserify index.js --standalone fav.type.is-plain-object -o web/fav.type.is-plain-object.js && cd web && uglifyjs fav.type.is-plain-object.js --compress --mangle -o fav.type.is-plain-object.min.js --source-map url=fav.type.is-plain-object.min.js.map",
     "web:build-test": "node tool/mktest.js",
@@ -41,6 +42,7 @@
     "@xslet/platform": "^0.1.5",
     "browserify": "^14.4.0",
     "chai": "^3.5.0",
+    "coveralls": "^2.13.1",
     "eslint": "^4.8.0",
     "mocha": "^3.5.3",
     "nyc": "^11.2.1",
