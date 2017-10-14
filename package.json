@@ -4,7 +4,8 @@
   "description": "Checks whether a value is a plain object or not.",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "web/"
   ],
   "scripts": {
     "lint": "eslint src test",
