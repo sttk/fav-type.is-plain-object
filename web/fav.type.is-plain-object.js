@@ -23,6 +23,15 @@ function isPlainObject(value) {
   }
 }
 
+function isNotPlainObject(value) {
+  return !isPlainObject(value);
+}
+
+Object.defineProperty(isPlainObject, 'not', {
+  enumerable: true,
+  value: isNotPlainObject,
+});
+
 module.exports = isPlainObject;
 
 },{}]},{},[1])(1)
