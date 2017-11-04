@@ -19,7 +19,7 @@ $ npm install --save @fav/type.is-plain-object
 
 ## Usage
 
-For Node.js, when installing `@fav/type.is-plain-object` from npm:
+For Node.js:
 
 ```js
 var isPlainObject = require('@fav/type.is-plain-object');
