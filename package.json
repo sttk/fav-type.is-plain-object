@@ -1,6 +1,6 @@
 {
   "name": "@fav/type.is-plain-object",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "Checks whether a value is a plain object or not.",
   "main": "index.js",
   "files": [
